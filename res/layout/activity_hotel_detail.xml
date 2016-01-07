@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context="com.hotale.activity.HotelDetailActivity" >
+
+    <ImageView
+        android:id="@+id/hotelimage"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/hotelpic" />
+
+    <EditText
+        android:id="@+id/hotelteltxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/hotelimage"
+        android:layout_toLeftOf="@+id/btn_addto_favorite"
+        android:ems="10"
+        android:focusableInTouchMode="false" />
+
+    <EditText
+        android:id="@+id/hoteladdtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/hotelteltxt"
+        android:focusableInTouchMode="false"
+        android:ems="10" >
+    </EditText>
+
+
+    
+    <ListView android:id="@+id/roomtype_list"    
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hoteladdtxt" />
+
+    <Button
+        android:id="@+id/btn_addto_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/hotelteltxt"
+        android:layout_alignBottom="@+id/hotelteltxt"
+        android:layout_alignParentRight="true"
+        android:text="收藏/取消" />
+
+</RelativeLayout>

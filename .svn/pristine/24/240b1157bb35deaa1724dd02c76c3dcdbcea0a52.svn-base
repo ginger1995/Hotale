@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hotale.activity.OrderInfoActivity" >
+
+    <TextView
+        android:id="@+id/orderinfo_realname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/orderinfo_username"
+        android:layout_below="@+id/orderinfo_username"
+        android:layout_marginTop="14dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/orderinfo_hotelname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/orderinfo_realname"
+        android:layout_below="@+id/orderinfo_realname"
+        android:layout_marginTop="14dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/orderinfo_hoteltel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/orderinfo_hotelname"
+        android:layout_below="@+id/orderinfo_hotelname"
+        android:layout_marginTop="14dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/orderinfo_hoteladd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/orderinfo_hoteltel"
+        android:layout_below="@+id/orderinfo_hoteltel"
+        android:layout_marginTop="14dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/orderinfo_indate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/orderinfo_hoteladd"
+        android:layout_below="@+id/orderinfo_hoteladd"
+        android:layout_marginTop="14dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/orderinfo_outdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/orderinfo_indate"
+        android:layout_below="@+id/orderinfo_indate"
+        android:layout_marginTop="14dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/orderinfo_orderdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/orderinfo_outdate"
+        android:layout_below="@+id/orderinfo_outdate"
+        android:layout_marginTop="14dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/orderinfo_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/orderinfo_orderdate"
+        android:layout_below="@+id/orderinfo_orderdate"
+        android:layout_marginTop="14dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/orderinfo_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/orderinfo_price"
+        android:layout_below="@+id/orderinfo_price"
+        android:layout_marginTop="14dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/orderinfo_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/orderinfo_status"
+        android:layout_below="@+id/orderinfo_status"
+        android:layout_marginTop="14dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/orderinfo_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="86dp"
+        android:layout_marginTop="38dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/btn_tocomment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/orderinfo_comment"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:text="评价订单" />
+
+    <Button
+        android:id="@+id/btn_topay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/orderinfo_price"
+        android:layout_alignBottom="@+id/orderinfo_price"
+        android:layout_alignLeft="@+id/btn_tocomment"
+        android:layout_alignRight="@+id/btn_tocomment"
+        android:text="支付订单" />
+    
+</RelativeLayout>

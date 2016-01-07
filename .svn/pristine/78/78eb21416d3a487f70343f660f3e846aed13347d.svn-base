@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hotale.activity.EditPasswordActivity" >
+
+    <TextView
+        android:id="@+id/editoldpassword_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="102dp"
+        android:text="原密码:" />
+
+    <EditText
+        android:id="@+id/edt_oldpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editoldpassword_txt"
+        android:layout_alignBottom="@+id/editoldpassword_txt"
+        android:layout_toRightOf="@+id/editoldpassword_txt"
+        android:ems="10"
+        android:inputType="textPassword"  />
+
+    <TextView
+        android:id="@+id/editnewpassword_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editoldpassword_txt"
+        android:layout_below="@+id/edt_oldpass"
+        android:layout_marginTop="21dp"
+        android:text="新密码:" />
+
+    <EditText
+        android:id="@+id/edt_newpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editnewpassword_txt"
+        android:layout_alignBottom="@+id/editnewpassword_txt"
+        android:layout_alignLeft="@+id/edt_oldpass"
+        android:layout_alignRight="@+id/edt_oldpass"
+        android:ems="10"
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/newpassagain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_newpass"
+        android:layout_marginTop="18dp"
+        android:text="重复新密码:" />
+
+    <EditText
+        android:id="@+id/edt_newpassagain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/newpassagain"
+        android:layout_alignBottom="@+id/newpassagain"
+        android:layout_alignRight="@+id/edt_newpass"
+        android:layout_toRightOf="@+id/newpassagain"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btn_edtpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_newpassagain"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:onClick="editpassword"
+        android:text="确认修改" />
+
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageButton
+        android:id="@+id/mainbtn_resev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mainbtn_user"
+        android:layout_alignTop="@+id/mainbtn_user"
+        android:layout_marginLeft="32dp"
+        android:layout_toRightOf="@+id/mainbtn_user"
+        android:src="@drawable/mainbtn_resev" />
+
+    <ImageButton
+        android:id="@+id/mainbtn_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/main_welcome"
+        android:layout_below="@+id/main_welcome"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/mainbtn_user" />
+
+    <ImageButton
+        android:id="@+id/mainbtn_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mainbtn_resev"
+        android:layout_alignTop="@+id/mainbtn_orders"
+        android:src="@drawable/mainbtn_favorite" />
+
+    <TextView
+        android:id="@+id/main_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="25dp"
+        android:text="Welcome!"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageButton
+        android:id="@+id/mainbtn_orders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainbtn_user"
+        android:layout_marginTop="31dp"
+        android:layout_toLeftOf="@+id/mainbtn_resev"
+        android:src="@drawable/mainbtn_orders" />
+
+    <ImageButton
+        android:id="@+id/mainbtn_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mainbtn_favorite"
+        android:layout_alignTop="@+id/mainbtn_checkin"
+        android:src="@drawable/mainbtn_contact" />
+
+    <TextView
+        android:id="@+id/maintxt_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/mainbtn_user"
+        android:layout_below="@+id/mainbtn_user"
+        android:layout_marginRight="9dp"
+        android:text="@string/myacount"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/maintxt_resev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mainbtn_resev"
+        android:layout_below="@+id/mainbtn_resev"
+        android:layout_marginLeft="9dp"
+        android:text="@string/reservehotel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/maintxt_orders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/maintxt_user"
+        android:layout_below="@+id/mainbtn_orders"
+        android:text="@string/myorders"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/maintxt_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/maintxt_resev"
+        android:layout_below="@+id/mainbtn_favorite"
+        android:text="@string/myfavorite"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/maintxt_checkin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/maintxt_orders"
+        android:layout_below="@+id/mainbtn_checkin"
+        android:text="@string/checkin"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/maintxt_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/maintxt_checkin"
+        android:layout_alignBottom="@+id/maintxt_checkin"
+        android:layout_alignLeft="@+id/maintxt_favorite"
+        android:text="@string/left_contact_us"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageButton
+        android:id="@+id/mainbtn_checkin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/maintxt_orders"
+        android:layout_marginTop="12dp"
+        android:layout_toLeftOf="@+id/mainbtn_resev"
+        android:src="@drawable/mainbtn_checkin" />
+
+</RelativeLayout>

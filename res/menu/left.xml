@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/left_login"
+        android:title="@string/left_login"/>
+
+    <group
+        android:id="@+id/left_settings"
+        android:title="@string/left_settings" >
+        <item
+            android:id="@+id/left_language"
+            android:title="@string/left_language"/>
+        <item
+            android:id="@+id/left_background"
+            android:title="@string/left_background"/>
+        <item
+            android:id="@+id/left_notificationsetting"
+            android:title="@string/left_notificationsetting"/>
+        <item
+            android:id="@+id/left_add_regular"
+            android:title="@string/left_add_regular"/>
+    </group>
+
+    <item
+        android:id="@+id/left_contact_us"
+        android:title="@string/left_contact_us"/>
+    <item
+        android:id="@+id/left_about"
+        android:title="@string/left_about"/>
+
+</menu>
